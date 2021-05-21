@@ -47,4 +47,5 @@ Public Class Form2
         Me.Hide()
         Me.form1.Show()
     End Sub
+
 End Class
