@@ -1,5 +1,4 @@
 ﻿Imports System.Media
-
 Public Class Form2
     Public Property form1 As Form1
     Public Property song As Song
@@ -29,13 +28,17 @@ Public Class Form2
         Label10.Text = Me.song.producer
         Label12.Text = Me.song.r_year
         Label14.Text = Me.song.type
+        BackButton.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "icons", "back.png"))
+        Play_Pause.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "icons", "Play.png"))
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Play_Pause.Click
         If Me.isPlaying Then
             Me.player.Stop()
+            Play_Pause.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "icons", "Play.png"))
         Else
             Me.player.Play()
+            Play_Pause.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "icons", "pause.png"))
         End If
         Me.isPlaying = Not (Me.isPlaying)
     End Sub
@@ -47,4 +50,5 @@ Public Class Form2
         Me.Hide()
         Me.form1.Show()
     End Sub
+
 End Class
