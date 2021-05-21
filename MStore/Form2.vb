@@ -9,7 +9,7 @@ Public Class Form2
     Public Sub New(form1 As Form1, song As Song)
         Me.form1 = form1
         Me.song = song
-        Me.player = New SoundPlayer(IO.Path.Combine(Application.StartupPath, "resources", "songs", Me.song.song_mp3))
+        Me.player = New SoundPlayer(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "songs", Me.song.song_mp3))
         Me.isPlaying = False
         ' This call is required by the designer.
         InitializeComponent()
@@ -20,7 +20,7 @@ Public Class Form2
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' TODO
-        PictureBox1.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "resources", "thumbnails", Me.song.song_img))
+        PictureBox1.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "thumbnails", Me.song.song_img))
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         Label1.Text = Me.song.name
         Label4.Text = Me.song.album
