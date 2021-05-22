@@ -39,6 +39,8 @@ Partial Class Form2
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.LessButton = New System.Windows.Forms.Button()
+        Me.MoreButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -154,12 +156,14 @@ Partial Class Form2
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.MoreButton)
         Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.LessButton)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(282, 33)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(506, 234)
+        Me.Panel1.Size = New System.Drawing.Size(506, 255)
         Me.Panel1.TabIndex = 4
         '
         'Panel2
@@ -174,7 +178,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Label13)
-        Me.Panel2.Location = New System.Drawing.Point(20, 91)
+        Me.Panel2.Location = New System.Drawing.Point(20, 104)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(353, 140)
         Me.Panel2.TabIndex = 2
@@ -234,6 +238,30 @@ Partial Class Form2
         Me.Label13.TabIndex = 1
         Me.Label13.Text = "Type : "
         '
+        'LessButton
+        '
+        Me.LessButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.LessButton.FlatAppearance.BorderSize = 0
+        Me.LessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LessButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.LessButton.Location = New System.Drawing.Point(461, 3)
+        Me.LessButton.Name = "LessButton"
+        Me.LessButton.Size = New System.Drawing.Size(42, 34)
+        Me.LessButton.TabIndex = 3
+        Me.LessButton.UseVisualStyleBackColor = False
+        '
+        'MoreButton
+        '
+        Me.MoreButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.MoreButton.FlatAppearance.BorderSize = 0
+        Me.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MoreButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MoreButton.Location = New System.Drawing.Point(461, 3)
+        Me.MoreButton.Name = "MoreButton"
+        Me.MoreButton.Size = New System.Drawing.Size(42, 34)
+        Me.MoreButton.TabIndex = 3
+        Me.MoreButton.UseVisualStyleBackColor = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -272,4 +300,6 @@ Partial Class Form2
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents MoreButton As Button
+    Friend WithEvents LessButton As Button
 End Class
