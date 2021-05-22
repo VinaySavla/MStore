@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Public Property songs As New List(Of Song)
 
-    Private Sub Song_ListBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles Song_ListBindingNavigatorSaveItem.Click
+    Private Sub Song_ListBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.Song_ListBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database11DataSet)
@@ -26,17 +26,16 @@
             End Try
             songs.Add(New Song(song.Song_ID, song.Song_Name, album, song.Artist, song.Genre, producer, song.R_Year, song.Type, song.Song_img, song.Song_mp3))
         Next
+        Next_Button.Image = Image.FromFile(IO.Path.Combine(Application.StartupPath, "..", "..", "resources", "icons", "Play.png"))
     End Sub
 
-    Private Sub BindingNavigatorMovePreviousItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorMovePreviousItem.Click
 
-    End Sub
-
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+    Private Sub Next_Button_Click(sender As Object, e As EventArgs) Handles Next_Button.Click
         If Song_ListListBox.SelectedIndex <> -1 Then
             Dim form2 As Form2 = New Form2(Me, songs.ElementAt(Song_ListListBox.SelectedIndex))
             Me.Hide()
             form2.Show()
         End If
     End Sub
+
 End Class
