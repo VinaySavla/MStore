@@ -33,6 +33,7 @@ Partial Class Form2
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MoreButton = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -40,7 +41,6 @@ Partial Class Form2
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.LessButton = New System.Windows.Forms.Button()
-        Me.MoreButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -103,7 +103,7 @@ Partial Class Form2
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label6.Location = New System.Drawing.Point(98, 10)
+        Me.Label6.Location = New System.Drawing.Point(93, 5)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(57, 20)
         Me.Label6.TabIndex = 1
@@ -114,7 +114,7 @@ Partial Class Form2
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label8.Location = New System.Drawing.Point(98, 34)
+        Me.Label8.Location = New System.Drawing.Point(93, 29)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(57, 20)
         Me.Label8.TabIndex = 1
@@ -125,7 +125,7 @@ Partial Class Form2
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label10.Location = New System.Drawing.Point(98, 58)
+        Me.Label10.Location = New System.Drawing.Point(93, 53)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(57, 20)
         Me.Label10.TabIndex = 1
@@ -136,7 +136,7 @@ Partial Class Form2
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label12.Location = New System.Drawing.Point(98, 82)
+        Me.Label12.Location = New System.Drawing.Point(93, 76)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(57, 20)
         Me.Label12.TabIndex = 1
@@ -147,7 +147,7 @@ Partial Class Form2
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label14.Location = New System.Drawing.Point(98, 106)
+        Me.Label14.Location = New System.Drawing.Point(93, 100)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(57, 20)
         Me.Label14.TabIndex = 1
@@ -163,8 +163,20 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(282, 33)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(506, 255)
+        Me.Panel1.Size = New System.Drawing.Size(676, 255)
         Me.Panel1.TabIndex = 4
+        '
+        'MoreButton
+        '
+        Me.MoreButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.MoreButton.FlatAppearance.BorderSize = 0
+        Me.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MoreButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MoreButton.Location = New System.Drawing.Point(629, 3)
+        Me.MoreButton.Name = "MoreButton"
+        Me.MoreButton.Size = New System.Drawing.Size(42, 34)
+        Me.MoreButton.TabIndex = 3
+        Me.MoreButton.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -178,7 +190,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Label13)
-        Me.Panel2.Location = New System.Drawing.Point(20, 104)
+        Me.Panel2.Location = New System.Drawing.Point(20, 91)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(353, 140)
         Me.Panel2.TabIndex = 2
@@ -188,7 +200,7 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label5.Location = New System.Drawing.Point(3, 10)
+        Me.Label5.Location = New System.Drawing.Point(-2, 5)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(62, 20)
         Me.Label5.TabIndex = 1
@@ -199,7 +211,7 @@ Partial Class Form2
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label11.Location = New System.Drawing.Point(3, 81)
+        Me.Label11.Location = New System.Drawing.Point(-6, 75)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(59, 20)
         Me.Label11.TabIndex = 1
@@ -210,7 +222,7 @@ Partial Class Form2
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label7.Location = New System.Drawing.Point(3, 34)
+        Me.Label7.Location = New System.Drawing.Point(-2, 29)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(66, 20)
         Me.Label7.TabIndex = 1
@@ -221,7 +233,7 @@ Partial Class Form2
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label9.Location = New System.Drawing.Point(3, 58)
+        Me.Label9.Location = New System.Drawing.Point(-2, 53)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(85, 20)
         Me.Label9.TabIndex = 1
@@ -232,7 +244,7 @@ Partial Class Form2
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Honeydew
-        Me.Label13.Location = New System.Drawing.Point(7, 101)
+        Me.Label13.Location = New System.Drawing.Point(-2, 95)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(55, 20)
         Me.Label13.TabIndex = 1
@@ -244,30 +256,18 @@ Partial Class Form2
         Me.LessButton.FlatAppearance.BorderSize = 0
         Me.LessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LessButton.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LessButton.Location = New System.Drawing.Point(461, 3)
+        Me.LessButton.Location = New System.Drawing.Point(630, 3)
         Me.LessButton.Name = "LessButton"
         Me.LessButton.Size = New System.Drawing.Size(42, 34)
         Me.LessButton.TabIndex = 3
         Me.LessButton.UseVisualStyleBackColor = False
-        '
-        'MoreButton
-        '
-        Me.MoreButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.MoreButton.FlatAppearance.BorderSize = 0
-        Me.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MoreButton.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MoreButton.Location = New System.Drawing.Point(461, 3)
-        Me.MoreButton.Name = "MoreButton"
-        Me.MoreButton.Size = New System.Drawing.Size(42, 34)
-        Me.MoreButton.TabIndex = 3
-        Me.MoreButton.UseVisualStyleBackColor = False
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 342)
+        Me.ClientSize = New System.Drawing.Size(970, 342)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.Play_Pause)
