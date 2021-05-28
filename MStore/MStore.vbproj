@@ -172,7 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database11.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="resources\icons\Play_1.png" />
     <None Include="resources\icons\Play.png" />
